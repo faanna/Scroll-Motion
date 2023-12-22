@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/anime.js"></script>
+		<script defer src="js/main.js"></script>
+		<script
+			src="https://kit.fontawesome.com/c12878d3ba.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- 스크롤 네비버튼 -->
+		<ul class="btnScroll">
+			<!-- li*4>p+a[href="#"] -->
+			<li class="on">
+				<p>HOME</p>
+				<a href="#"></a>
+			</li>
+			<li>
+				<p>ABOUT</p>
+				<a href="#"></a>
+			</li>
+			<li>
+				<p>PORTFOLIO</p>
+				<a href="#"></a>
+			</li>
+			<li>
+				<p>BLOG</p>
+				<a href="#"></a>
+			</li>
+		</ul>
+
+		<header id="header" class="scrollView on"></header>
+		<figure id="visual"></figure>
+		<!-- 스크롤 모션을 주고자하면, offsetTop의 값을 배열에 각 이동하고자하는
+요소의 높이 값을 넣어야합니다 태그이름이 다르므로 공통 클래스를 부여해서
+그 클래스로 찾아서 배열로 넣기위함입니다 -->
+		<!-- about영역 -->
+		<section id="about" class="scrollView">
+			<div class="inner">
+				<h2>ABOUT</h2>
+				<a href="#;">VIEW MORE</a>
+				<div class="txt">
+					<h3>
+						<p>
+							<span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+						</p>
+						<br />
+						<p>
+							<span>Lorem ipsum dolor sit amet consectetur.</span>
+						</p>
+					</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+						dicta culpa sapiente praesentium ducimus adipisci, nobis unde
+						consequuntur voluptatem dolorum accusantium a, ullam eveniet atque
+						voluptates voluptatibus, delectus fuga ex!Lorem ipsum dolor sit amet
+						consectetur adipisicing elit. Fugiat dicta culpa sapiente
+						praesentium ducimus adipisci, nobis unde consequuntur voluptatem
+						dolorum accusantium a, ullam eveniet atque voluptates voluptatibus,
+						delectus fuga ex!
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- 포트폴리오 영역 -->
+		<section id="portfolio" class="scrollView">
+			<div class="inner">
+				<h2>PORTFOLIO</h2>
+				<a href="#;">VIEW MORE</a>
+
+				<div class="tab_container">
+					<div id="tab">
+						<ul>
+							<li class="on"><a href="#;">HOUSE</a></li>
+							<li><a href="#;">OFFICE</a></li>
+							<li><a href="#;">RESTAURANT</a></li>
+							<li><a href="#;">OTHERS</a></li>
+						</ul>
+					</div>
+
+					<section>
+						<article class="on">
+							<div>
+								<img src="img/house/pic1.jpg" alt="" />
+								<p>PRIVATE HOUSE</p>
+							</div>
+							<div>
+								<img src="img/house/pic2.jpg" alt="" />
+								<p>BEDROOM</p>
+							</div>
+							<div>
+								<img src="img/house/pic3.jpg" alt="" />
+								<p>KITCHEN</p>
+							</div>
+						</article>
+						<article>
+							<div>
+								<img src="img/office/pic1.jpg" alt="" />
+								<p>PRIVATE HOUSE</p>
+							</div>
+							<div>
+								<img src="img/office/pic2.jpg" alt="" />
+								<p>BEDROOM</p>
+							</div>
+							<div>
+								<img src="img/office/pic3.jpg" alt="" />
+								<p>KITCHEN</p>
+							</div>
+						</article>
+						<article>
+							<div>
+								<img src="img/restaurant/pic1.jpg" alt="" />
+								<p>PRIVATE HOUSE</p>
+							</div>
+							<div>
+								<img src="img/restaurant/pic2.jpg" alt="" />
+								<p>BEDROOM</p>
+							</div>
+							<div>
+								<img src="img/restaurant/pic3.jpg" alt="" />
+								<p>KITCHEN</p>
+							</div>
+						</article>
+						<article>
+							<div>
+								<img src="img/others/pic1.jpg" alt="" />
+								<p>PRIVATE HOUSE</p>
+							</div>
+							<div>
+								<img src="img/others/pic2.jpg" alt="" />
+								<p>BEDROOM</p>
+							</div>
+							<div>
+								<img src="img/others/pic3.jpg" alt="" />
+								<p>KITCHEN</p>
+							</div>
+						</article>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- 블로그 영역 -->
+		<section id="blog" class="scrollView">
+			<div class="inner">
+				<h2>BLOG</h2>
+				<div class="wrap">
+					<article>
+						<h3>magazine_interior design</h3>
+						<div class="pic">
+							<img src="img/blog/pic1.jpg" alt="" />
+						</div>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							Doloribus, possimus?
+						</p>
+					</article>
+					<article>
+						<h3>magazine_interior design</h3>
+						<div class="pic">
+							<img src="img/blog/pic2.jpg" alt="" />
+						</div>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							Doloribus, possimus?
+						</p>
+					</article>
+					<article>
+						<h3>magazine_interior design</h3>
+						<div class="pic">
+							<img src="img/blog/pic3.jpg" alt="" />
+						</div>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							Doloribus, possimus?
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer id="footer">
+			<div class="inner">
+				<div class="footer_menu">
+					<h2><a href="index.html">Woori</a></h2>
+					<ul>
+						<li><a href="#;">Policy</a></li>
+						<li><a href="#;">Terms</a></li>
+						<li><a href="#;">Customer</a></li>
+						<li><a href="#;">Blog</a></li>
+					</ul>
+				</div>
+				<div class="footer_contact">
+					<h2>Contact Us</h2>
+					<address>대한민국 경기도 부천시 부천로 부천동</address>
+					<p>Tel : 123- 1234- 1244</p>
+				</div>
+				<div class="footer_follow">
+					<h2>Follow Us</h2>
+					<p>Yes, We are Social!</p>
+					<ul>
+						<li>
+							<a href="#;"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li>
+							<a href="#;"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li>
+							<a href="#;"><i class="fab fa-twitter"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_subscribe">
+					<h2>SUBSCRIBE</h2>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi,
+						culpa.
+					</p>
+					<div>
+						<label class="hidden" for="subscribe"></label>
+						<input
+							type="email"
+							name="subscribe"
+							id="subscribe"
+							placeholder="Email"
+						/>
+						<a href="#;" class="subscribeBtn">GO</a>
+					</div>
+				</div>
+				<p>Copyright &copy; 2023 Woori All right reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>
